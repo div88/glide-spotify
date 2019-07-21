@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import Home from './components/home.js'
 import Search from './components/search.js'
+import ArtistDetail from './components/artistDetail.js'
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           )}/>
           <Route path="/search" render={() => (
             <Search></Search>
+          )}/>
+           <Route path="/artists/" render={(props) => (
+            <ArtistDetail {...props}></ArtistDetail>
           )}/>
         </BrowserRouter>
 

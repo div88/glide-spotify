@@ -86,12 +86,13 @@
   text-align: left;
   float: left;
   width: 100%;
+  border: 1px solid #000;
 }
 
 .trackList li{
   
   float: left;
-  width: 100%;
+  width: 50%;
   list-style: none;
   font-weight:700;
   padding: 10px 0;
@@ -105,6 +106,11 @@
   height: 75px;
   width: 75px;
   border-radius: 50%;
+}
+
+.artistDetail li{
+  list-style: none;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {

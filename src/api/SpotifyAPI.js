@@ -1,10 +1,7 @@
 import SpotifyWebApi from 'spotify-web-api-js';
 
-const access_token='BQAeS-rz9fxZ4KihrgT4g2Fz_PcTSoVt37S6KDDYd5tmupa1mAGp0i78xPfRDgUXShwFPDUmyPNJgd5E-lbm9cOxPZBM40CZ3TXMXRy5UK2PTrsA1q22CsVX0S1ehzFM2A4MT0KK2H_ahnYqiLqwo9ASGx3WXKMHpdU-tW1cEf8SueAPGQqY'
-// const refresh_token='AQAkjwuncVrE_Vs9x-8JuRMQx7PhoQ-lTcfDkekmTHRi5jwQUlTIjxlbMFaSvpgNUUoCHpQMQ_aCMlsrvmV_sUZYHVTFKPb8xkajIW1xq7SrUF8n9mx4DZM8JOAXcDjdWFnoZA'
-
-
-// AQCM3Pr4tqlKLSXYdXhhLeeWXlJG3jRod1Y8-ojUVGvtg5ND5AgliCa5TZFB7_ObxmkFhtvr4fO36FOQkE27qQjtVbNcgUiVz4hYvAXWhhW7aIbi0u1j42eOXYZuSz1SyFlHfQ
+const access_token='BQAQ5gqUbkhuVTze8tIBUM3ZwcsJ5XRDEe9U5DOpFW4cfLC1spDGKnqkU08GVMCohr_1Q_0xaOfVnMNl2z3pTIisVrvkv52sJBuf026zNbUOyoPc0MSfNzF3d44NweRgS0MUJNzlYvJYOE25ZGuG4V4xhoyT9ulbyCHMO8hYk3LGCtDN0fh0'
+// const refresh_token='AQAxFt3wayC_9tSBC1ABFpAaE161eg8WTP93T_qfj7R7ahf4tr2shn1FyEUuO0CRkXGZ5FKi85Acjq1cjuLwycKoYqA-3E0iRiYH4Yo_esqtfGNnzh_pcIXmP61yW71MBUZyIg'
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'f538083582e248829c77e0d2ac17fc95',
@@ -26,4 +23,7 @@ export const search = (queryTerm) => spotifyApi.search(queryTerm, {limit: 10})
   .then(data =>  data)
   .catch((err)=> console.log(err))
 
-
+// get an artist
+export const getArtistDetail = (artist) => spotifyApi.getArtist(artist)
+	.then(data => data)
+	.catch((err)=> console.log(err))

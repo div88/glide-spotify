@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Artists extends Component {
+
 	render() {
 		return (
 			<div className="artistList">
@@ -12,12 +13,13 @@ class Artists extends Component {
 	          			<figure>
 	        				{ artist.images.length !== 0 ? <img src={artist.images[0].url} alt={artist.name} /> : <img src='' alt='not found'/> }
 	        				<figcaption>
-	          					<Link to={artist.external_urls.spotify}>{artist.name}</Link>
+	          					<Link to={{ pathname: '/artists/'+artist.id, state: {artist: artist}}}>{artist.name}</Link>
 	        				</figcaption>
 	    				</figure>
 	        		</li>
 	      		)
     		})}
+
     		</div>
 		)
 	}
