@@ -66,24 +66,45 @@
   list-style: none;
 }
 
-.list li{
+/*.artistList li{
   list-style: none;
   height: 150px;
   width: 150px;
   display: inline-block;
   border: 1px solid red;
   margin-right: 5%;
-}
+}*/
 
-.searchResultList {
+.artistList .searchResultList{
   display: inline-block;
   float: left;
   list-style: none;
+  width: 20%;
 }
 
-.searchResultList img {
-  height: 150px;
-  width: 150px;
+.trackList {
+  text-align: left;
+  float: left;
+  width: 100%;
+}
+
+.trackList li{
+  
+  float: left;
+  width: 100%;
+  list-style: none;
+  font-weight:700;
+  padding: 10px 0;
+}
+
+.trackList .artistName{
+  display: block;
+}
+
+.artistList img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
 }
 
 @keyframes App-logo-spin {
