@@ -75,6 +75,17 @@
   margin-right: 5%;
 }
 
+.searchResultList {
+  display: inline-block;
+  float: left;
+  list-style: none;
+}
+
+.searchResultList img {
+  height: 150px;
+  width: 150px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
