@@ -1,48 +1,33 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.masthead {
+  background-color: #581845;
   color: white;
+  padding: 2%;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.masthead a {
+  color: white !important;
+  font-weight: 900;
+  font-size: 23px;
 }
+
 
 .contentWrapper {
-  max-width: 1024px;
   width: 100%;
   margin: 0 auto;
   
 }
 
 .sideContent {
-  width: 20%;
-  /*border: 1px solid green;*/
+  width: 10%;
+  border: 1px solid green;
   margin-right: 2%;
   float: left;
 }
 
-.mainContent {
-  width: 65%;
-  /*border: 1px solid green;*/
-  margin-right: 2%;
-  float: left;
-}
+/*.mainContent {
+  border: 1px solid green;
+}*/
 
 .searchInput {
   width: 100%;
@@ -66,14 +51,36 @@
   list-style: none;
 }
 
-/*.artistList li{
+.releaseItem {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5%;
+  float: left;
+}
+
+.releaseItem img{
   list-style: none;
   height: 150px;
   width: 150px;
   display: inline-block;
-  border: 1px solid red;
   margin-right: 5%;
+}
+
+.releaseItem figcaption {
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  width: 150px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+/*.releaseItem figcaption:hover {
+  overflow: visible;
+  white-space: normal;
 }*/
+
 
 .artistList .searchResultList{
   display: inline-block;
@@ -109,8 +116,19 @@
 }
 
 .artistDetail li{
-  list-style: none;
+  list-style: none; 
   text-align: center;
+}
+
+.card {
+  display: inline-block !important;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.card img{
+  width: 150px;
+  height: 150px;
 }
 
 @keyframes App-logo-spin {

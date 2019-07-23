@@ -63,7 +63,9 @@ class Search extends Component {
 	             		</div>
 	             		
 	             	: 
-                	<p>Find your favorite artists and songs</p> 
+                	<div className="d-flex justify-content-center mt-3">
+                		<p className='bd-lead font-weight-bold'>Find your favorite artists and songs</p> 
+                	</div>
                 }
 
 	        </div>
