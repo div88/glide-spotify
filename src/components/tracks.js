@@ -14,7 +14,7 @@ class Tracks extends Component {
 								{ this.props.tracks.map((track, index) => {
 						      		return(
 						        		<li key={index} className="searchResultList">
-						        			<img src={music} className="musicIcon" alt="musicIcon" />
+						        			<img src={musicNote} className="musicIcon" alt="musicIcon" />
 						        			<a href={track.external_urls.spotify} className="trackLink">
 							          			<span className="trackName">
 							          				{track.name}

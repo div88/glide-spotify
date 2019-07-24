@@ -7,7 +7,7 @@ class Artists extends Component {
 	render() {
 		return (
 			<div className="artistList">
-			<h3 className="text-center mt-3 mb-3">Artists</h3>
+			<h3 className="text-center pb-4">Artists</h3>
 			{ this.props.artists.map((artist, index) => {
 	      		return(
 	        		<li key={index} className="artistListItem justify-content-center">

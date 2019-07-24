@@ -51,9 +51,6 @@ class Home extends Component {
 		})
     }
     
-
-   	// BQA06-ZTGIGbjW8u1-winG5wcHWcQ58xaxOeRPWQtyqOa_WT_Xbh_0AEInFy9wUEAl-W2NmsiI2I7r8eGSOqrg-VX6acBP1L3F7crdx3KEm2a6WtqjeQxw9mbNC0xU-ZRjNhzPpP2f222rz-YCs2G-bcTvSDb4QLIZ30IjDBJjf8TlseHkfH
-
     renderNewReleases() {
     	return ( 
     		<div>
