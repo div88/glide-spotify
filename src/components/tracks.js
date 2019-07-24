@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import musicNote from '../assets/music.png';
 
 class Tracks extends Component {
 	render() {
@@ -13,8 +14,13 @@ class Tracks extends Component {
 								{ this.props.tracks.map((track, index) => {
 						      		return(
 						        		<li key={index} className="searchResultList">
-						          			{track.name}
-						          			<span className="artistName text-muted">{track.artists[0].name}</span>
+						        			<img src={music} className="musicIcon" alt="musicIcon" />
+						        			<a href={track.external_urls.spotify} className="trackLink">
+							          			<span className="trackName">
+							          				{track.name}
+							          				<span className="artistName text-muted">{track.artists[0].name}</span>
+							          			</span>
+						          			</a>
 						        		</li>
 						      		)
 					    		})}

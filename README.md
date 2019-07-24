@@ -1,31 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Talk to Spotify API Project
 
-## Available Scripts
+We would like you to create a simple React app which talks to Spotify API, described in https://developer.spotify.com/documentation/web-api/ . You can use a wrapper such as https://github.com/jmperez/spotify-web-api-js  .
 
-In the project directory, you can run:
+## Walkthrough
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Required
+#### Application Setup
+- [x] Application easy to install and start.
+  - install all project dependencies with `npm install`
+  - start the development server with `npm start`
+- [x] Application includes README with clear installation and launch instructions
 
-### `npm test`
+#### Views
+Application has, 3 views:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Default (Home)
+- [x] Shows a form to accept token from user, if not auth token
+- [x] Shows new releases
 
-### `npm run build`
+##### Search View
+- [x] The ability to search for artists, and browse the results.
+- [x] The ability to search for songs, and browse the results.
+- [x] For an artist we would like a detailed view of them, feel free to choose any details from
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Artist Detail View
+- [x] Shows artist name, image and a link to spotify page for the artist
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+### Acknowledgements:
+- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+- User Icon made by [Icongeek26](https://www.flaticon.com/authors/icongeek26)</a> from [Flaticon](https://www.flaticon.com/) is licensed by [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+- Musical Note Edit Icon made by [Those Icons](https://www.flaticon.com/authors/those-icons)</a> from [Flaticon](https://www.flaticon.com/) is licensed by [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)
 
 
