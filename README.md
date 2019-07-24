@@ -4,7 +4,7 @@ We would like you to create a simple React app which talks to Spotify API, descr
 
 ## Walkthrough
 
-
+![SpotiyGlide Walkthrough](https://github.com/div88/glide-spotify/blob/master/public/spotifyGlide.gif)
 
 ### Required
 #### Application Setup

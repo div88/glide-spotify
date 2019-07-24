@@ -59,7 +59,7 @@ class Home extends Component {
 				    	{this.state.newReleases.map((item, index) => {
 				      		return (
 				      			<li className="releaseItem" key={index}>
-								    <a href={item.external_urls.spotify} className="btn">
+								    <a target="_blank" href={item.external_urls.spotify} className="btn">
 										<figure>
 					        				{ item.images.length !== 0 ? <img src={item.images[0].url} alt={item.name} /> : <img src='' alt='not found'/> }
 					        				<figcaption className="col-md-12">

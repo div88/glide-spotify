@@ -15,7 +15,7 @@ class Tracks extends Component {
 						      		return(
 						        		<li key={index} className="searchResultList">
 						        			<img src={musicNote} className="musicIcon" alt="musicIcon" />
-						        			<a href={track.external_urls.spotify} className="trackLink">
+						        			<a target="_blank" href={track.external_urls.spotify} className="trackLink">
 							          			<span className="trackName">
 							          				{track.name}
 							          				<span className="artistName text-muted">{track.artists[0].name}</span>
