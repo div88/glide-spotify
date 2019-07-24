@@ -4,7 +4,6 @@ class ArtistDetail extends Component {
 	
 	render() {
 		const artist = this.props.location.state.artist;
-		console.log(artist);
 		return (
 			<div className="artistDetail">
 				<h3>Artist Details</h3>

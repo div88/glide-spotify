@@ -52,16 +52,16 @@ class Home extends Component {
     }
     
 
-    // BQA2rTyoVbneV9yI-Ip7IanfAZn8ZaTYaB_AN8gtqcneOHKsxjyoPjaIoff6MDGGEDpzIL7kFfbuWr8QOYW9Ebc2_owTESll0qYy1dhEZjd-wEPQVzpo1hpIpmCS8m_lkvB2Aspfxw3rFmpuZvnRcFCUwf2Z0StIwugaLdrB8EVk4MvzrabN
+   	// BQA06-ZTGIGbjW8u1-winG5wcHWcQ58xaxOeRPWQtyqOa_WT_Xbh_0AEInFy9wUEAl-W2NmsiI2I7r8eGSOqrg-VX6acBP1L3F7crdx3KEm2a6WtqjeQxw9mbNC0xU-ZRjNhzPpP2f222rz-YCs2G-bcTvSDb4QLIZ30IjDBJjf8TlseHkfH
 
     renderNewReleases() {
     	return ( 
     		<div>
-				<h3>New Releases</h3>
-			    	{this.state.newReleases.map((item, index) => {
-			      		return (
-			      			<div>
-				      			<li className="releaseItem col-md-1" key={index}>
+				<h3 className="text-center">New Releases</h3>
+					<ul className='justify-content-center'>
+				    	{this.state.newReleases.map((item, index) => {
+				      		return (
+				      			<li className="releaseItem" key={index}>
 								    <a href={item.external_urls.spotify} className="btn">
 										<figure>
 					        				{ item.images.length !== 0 ? <img src={item.images[0].url} alt={item.name} /> : <img src='' alt='not found'/> }
@@ -71,10 +71,9 @@ class Home extends Component {
 					    				</figure>
 				    				</a>
 								</li>
-								
-							</div>
-			      		)
-					})}
+				      		)
+						})}
+					</ul>
 			</div> 
 		)
     }

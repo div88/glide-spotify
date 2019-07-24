@@ -53,7 +53,7 @@ class Search extends Component {
 	render() {
 		return (
 			<div className="mainContent">
-	            <h2>Search Spotify</h2>
+	            <h3 className="text-center">Search Spotify</h3>
 	            <input type="text" placeholder="Search here" className="searchInput" onChange={(event) => this.handleSearch(event.target.value)}/>
 
 	             {(this.state.showSearchResult && (this.state.artists !== undefined || this.state.tracks !== undefined)) ?  

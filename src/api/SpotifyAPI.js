@@ -32,13 +32,13 @@ export const myApp = (function() {
 
 export default myApp
 
-// myApp.getInstance().setAccessToken(access_token);
+
 
 export const searchArtists = (queryTerm) => myApp.getInstance().searchArtists(queryTerm, {limit: 10})
   .then(data =>  data.artists.items)
   .catch((err)=> console.log(err))
 
-export const searchTracks = (queryTerm) => myApp.getInstance().searchTracks(queryTerm, {limit: 10})
+export const searchTracks = (queryTerm) => myApp.getInstance().searchTracks(queryTerm, {limit: 5})
   .then(data =>  data.tracks.items)
   .catch((err)=> console.log(err))
 
@@ -54,4 +54,9 @@ export const getArtistDetail = (artist) => myApp.getInstance().getArtist(artist)
 export const getNewReleases = (artist) => myApp.getInstance().getNewReleases({limit: 10})
 	.then(data => data.albums.items)
 	.catch((err)=> err)
+
+export const getFeaturedPlaylists = (artist) => myApp.getInstance().getFeaturedPlaylists({limit: 10})
+	.then(data => data.albums.items)
+	.catch((err)=> err)
+
 
