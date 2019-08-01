@@ -1,6 +1,7 @@
 # Talk to Spotify API Project
 
-We would like you to create a simple React app which talks to Spotify API, described in https://developer.spotify.com/documentation/web-api/ . You can use a wrapper such as https://github.com/jmperez/spotify-web-api-js  .
+A simple React app which talks to Spotify API, described in https://developer.spotify.com/documentation/web-api/ . 
+https://github.com/jmperez/spotify-web-api-js wrapper is used.
 
 ## Walkthrough
 
